@@ -1,0 +1,77 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #a31111;
+  overflow: hidden;
+}
+
+body .perspective-text {
+  color: white;
+  font-family: "Poppins";
+  font-size: 58px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+body .perspective-text:hover p {
+  -webkit-transform: translate(0, -50px);
+          transform: translate(0, -50px);
+}
+
+body .perspective-text .perspective-line {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+body .perspective-text .perspective-line p {
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+body .perspective-text .perspective-line:nth-child(odd) {
+  -webkit-transform: skew(60deg, -30deg) scaleY(0.667);
+          transform: skew(60deg, -30deg) scaleY(0.667);
+}
+
+body .perspective-text .perspective-line:nth-child(even) {
+  -webkit-transform: skew(0deg, -30deg) scaleY(1.333);
+          transform: skew(0deg, -30deg) scaleY(1.333);
+}
+
+body .perspective-text .perspective-line:nth-child(1) {
+  left: calc(29px * 1);
+}
+
+body .perspective-text .perspective-line:nth-child(2) {
+  left: calc(29px * 2);
+}
+
+body .perspective-text .perspective-line:nth-child(3) {
+  left: calc(29px * 3);
+}
+
+body .perspective-text .perspective-line:nth-child(4) {
+  left: calc(29px * 4);
+}
+
+body .perspective-text .perspective-line:nth-child(5) {
+  left: calc(29px * 5);
+}
+/*# sourceMappingURL=style.css.map */
