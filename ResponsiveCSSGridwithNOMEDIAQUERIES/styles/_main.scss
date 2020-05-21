@@ -1,0 +1,30 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 1rem;
+  cursor: pointer;
+  .card {
+    transition: transform 1s;
+
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) {
+        background: nth($colors, $i);
+      }
+    }
+
+    &:hover {
+      transform: translateY(-1rem);
+    }
+
+    .info {
+      padding: 1rem;
+      p.title {
+        font-weight: bold;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

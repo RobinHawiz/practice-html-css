@@ -1,0 +1,76 @@
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 1rem;
+  cursor: pointer;
+}
+
+main .card {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+main .card:nth-child(1) {
+  background: #e9e9e9;
+}
+
+main .card:nth-child(2) {
+  background: #d8d8d8;
+}
+
+main .card:nth-child(3) {
+  background: #fafafa;
+}
+
+main .card:nth-child(4) {
+  background: #cccccc;
+}
+
+main .card:nth-child(5) {
+  background: #f0f0f0;
+}
+
+main .card:nth-child(6) {
+  background: #e0e0e0;
+}
+
+main .card:hover {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+main .card .info {
+  padding: 1rem;
+}
+
+main .card .info p.title {
+  font-weight: bold;
+}
+
+main .card img {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  margin: 3rem;
+}
+/*# sourceMappingURL=style.css.map */
