@@ -1,0 +1,8 @@
+$color-primary: #ddd;
+$color-dark: #333;
+$color-light: #fff;
+$shadow: 0 0.1rem 0.5rem rgba(104, 104, 104, 0.8);
+
+@import "globals";
+@import "navbar";
+@import "home";
