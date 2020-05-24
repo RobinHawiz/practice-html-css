@@ -1,0 +1,23 @@
+nav {
+  ul {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+
+    a {
+      background: $color-primary;
+      padding: 0.8rem;
+      color: $color-dark;
+      text-transform: uppercase;
+      box-shadow: $shadow;
+      display: block;
+      text-align: center;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background: $color-dark;
+        color: $color-light;
+      }
+    }
+  }
+}

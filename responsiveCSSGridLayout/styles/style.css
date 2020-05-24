@@ -34,7 +34,33 @@ li {
 a {
   text-decoration: none;
   color: black;
-  font-size: 2rem;
+  font-size: 1.1rem;
+}
+
+nav ul {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+nav ul a {
+  background: #ddd;
+  padding: 0.8rem;
+  color: #333;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 0.1rem 0.25rem rgba(104, 104, 104, 0.8);
+          box-shadow: 0 0.1rem 0.25rem rgba(104, 104, 104, 0.8);
+  display: block;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+nav ul a:hover {
+  background: #333;
+  color: #fff;
 }
 
 #homepage {
