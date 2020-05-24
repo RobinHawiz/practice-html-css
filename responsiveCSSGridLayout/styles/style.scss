@@ -6,3 +6,45 @@ $shadow: 0 0.1rem 0.5rem rgba(104, 104, 104, 0.8);
 @import "globals";
 @import "navbar";
 @import "home";
+
+@media screen and (max-width: 700px) {
+  #homepage {
+    nav {
+      ul {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    #top-container {
+      grid-template-areas:
+        "showcase showcase"
+        "top-box-a top-box-b";
+
+      .showcase {
+        h1 {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    #info {
+      grid-template-columns: 1fr;
+
+      .btn {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #homepage {
+    #top-container {
+      grid-template-areas:
+        "showcase"
+        "top-box-a"
+        "top-box-b";
+    }
+  }
+}

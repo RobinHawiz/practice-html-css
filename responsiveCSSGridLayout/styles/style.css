@@ -224,4 +224,31 @@ nav ul a:hover {
   color: #fff;
   padding: 2rem;
 }
+
+@media screen and (max-width: 700px) {
+  #homepage nav ul {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #homepage #top-container {
+        grid-template-areas: "showcase showcase" "top-box-a top-box-b";
+  }
+  #homepage #top-container .showcase h1 {
+    font-size: 3rem;
+  }
+  #homepage #info {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #homepage #info .btn {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #homepage #top-container {
+        grid-template-areas: "showcase" "top-box-a" "top-box-b";
+  }
+}
 /*# sourceMappingURL=style.css.map */
