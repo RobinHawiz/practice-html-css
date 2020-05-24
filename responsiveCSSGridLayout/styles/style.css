@@ -170,4 +170,16 @@ nav ul a:hover {
 #homepage #boxes .box h3 {
   margin: 1rem 0rem;
 }
+
+#homepage #info {
+  background: #ddd;
+  -webkit-box-shadow: 0 0.1rem 0.5rem rgba(104, 104, 104, 0.8);
+          box-shadow: 0 0.1rem 0.5rem rgba(104, 104, 104, 0.8);
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3rem;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+}
 /*# sourceMappingURL=style.css.map */
