@@ -150,4 +150,24 @@ nav ul a:hover {
   -ms-grid-column: 3;
   grid-area: top-box-b;
 }
+
+#homepage #boxes {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+#homepage #boxes .box {
+  background: #ddd;
+  text-align: center;
+  padding: 1.5rem 2.5rem;
+  -webkit-box-shadow: 0 0.1rem 0.5rem rgba(104, 104, 104, 0.8);
+          box-shadow: 0 0.1rem 0.5rem rgba(104, 104, 104, 0.8);
+}
+
+#homepage #boxes .box h3 {
+  margin: 1rem 0rem;
+}
 /*# sourceMappingURL=style.css.map */

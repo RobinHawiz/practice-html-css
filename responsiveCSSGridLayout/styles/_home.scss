@@ -62,4 +62,21 @@
       grid-area: top-box-b;
     }
   }
+
+  #boxes {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+    .box {
+      background: $color-primary;
+      text-align: center;
+      padding: 1.5rem 2.5rem;
+      box-shadow: $shadow;
+
+      h3 {
+        margin: 1rem 0rem;
+      }
+    }
+  }
 }
