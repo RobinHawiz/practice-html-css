@@ -37,6 +37,18 @@ a {
   font-size: 1.1rem;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
 nav ul {
   display: -ms-grid;
   display: grid;
@@ -117,7 +129,6 @@ nav ul a:hover {
 }
 
 #homepage #top-container .showcase p {
-  font-size: 1.5rem;
   color: #fff;
   margin-top: 0;
 }
@@ -183,6 +194,15 @@ nav ul a:hover {
   padding: 3rem;
 }
 
+#homepage #info .business h2 {
+  font-size: 4rem;
+  margin: 1rem 0rem;
+}
+
+#homepage #info .business p {
+  margin: 1rem 0rem;
+}
+
 #homepage #portfolio {
   display: -ms-grid;
   display: grid;
@@ -195,5 +215,13 @@ nav ul a:hover {
   width: 100%;
   -webkit-box-shadow: 0 0.1rem 0.5rem rgba(104, 104, 104, 0.8);
           box-shadow: 0 0.1rem 0.5rem rgba(104, 104, 104, 0.8);
+}
+
+#homepage footer {
+  margin-top: 2rem;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
